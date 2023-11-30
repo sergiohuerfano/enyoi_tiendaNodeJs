@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tienda Enyoi</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div id="usuarios-section">
+    <h2>Usuarios</h2>
+    <form id="usuario-form">
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" required>
+      <label for="email">Email:</label>
+      <input type="email" id="email" required>
+      <label for="contraseña">Contraseña:</label>
+      <input type="password" id="contraseña" required>
+      <button type="button" onclick="crearUsuario()">Agregar Usuario</button>
+    </form>
+
+    <ul id="lista-usuarios"></ul>
+  </div>
+
+  <div id="ciudades-section">
+    <h2>Ciudades</h2>
+    <form id="ciudad-form">
+      <label for="nombreCiudad">Nombre de la Ciudad:</label>
+      <input type="text" id="nombreCiudad" required>
+      <label for="idCiudad">Codigo Ciudad:</label>
+      <input type="number" id="ciudad" required>
+      <button type="button" onclick="crearCiudad()">Agregar Ciudad</button>
+    </form>
+
+    <ul id="lista-ciudades"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
